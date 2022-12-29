@@ -1,0 +1,28 @@
+{
+  "name": "a-parser-test",
+  "version": "1.0.0",
+  "description": "Test task for A-Parser company",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel serve index.html",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximKaschitskiy/a-parser-test.git"
+  },
+  "author": "Kaschitskiy Maxim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maximKaschitskiy/a-parser-test/issues"
+  },
+  "homepage": "https://github.com/maximKaschitskiy/a-parser-test#readme",
+  "dependencies": {
+    "parcel": "^2.8.2",
+    "parcel-bundler": "^1.12.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

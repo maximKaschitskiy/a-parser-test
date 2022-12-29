@@ -11,7 +11,7 @@ const getNodes = (string) => { // get entire content from <body>-tag
 };
 
 const parseNodes = (string) => { // get all text nodes
-  const strings = [];
+  const strings = Array();
   const walking = (string) => {
     string.childNodes.forEach((element) => {
       if (
@@ -49,11 +49,11 @@ const parseWords = (string) => // filter for leave only unique and long words
 
 const appendAnswer = (string) => {  // add answer in document
   const data = parseWords(string);
-  const container = document.querySelector(".content");
-  const template = document.querySelector(".template");
-  const templateConteiner = template.content.querySelector(".template__conteiner");
-  const allWords = template.content.querySelector(".all-words");
-  const wordsCount = template.content.querySelector(".words-count");
+  const container = document.querySelector(".content") as Element;
+  const template = document.querySelector(".template") as HTMLTemplateElement ;
+  const templateConteiner = template.content.querySelector(".template__conteiner") as Element;
+  const allWords = template.content.querySelector(".all-words") as Element;
+  const wordsCount = template.content.querySelector(".words-count") as Element;
 
   allWords.childNodes[2].textContent = [...data].toString();
   wordsCount.childNodes[1].textContent = `Ответ: ${[...data].length} уникальных слов`;
