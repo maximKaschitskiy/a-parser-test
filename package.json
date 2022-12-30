@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/maximKaschitskiy/a-parser-test/issues"
   },
-  "homepage": "https://github.com/maximKaschitskiy/a-parser-test",
+  "homepage": "https://maximkaschitskiy.github.io/a-parser-test/",
   "dependencies": {
     "parcel": "^2.8.2",
     "parcel-bundler": "^1.12.5"
