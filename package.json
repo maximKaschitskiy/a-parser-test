@@ -2,11 +2,11 @@
   "name": "a-parser-test",
   "version": "1.0.0",
   "description": "Test task for A-Parser company",
-  "main": "index.js",
   "scripts": {
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --public-url ./",
     "dev": "parcel serve index.html",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "repository": {
     "type": "git",
